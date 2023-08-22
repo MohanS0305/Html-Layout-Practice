@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Flex layout3
+		</title>
+		<style type="text/css">
+			* {
+						margin: 0px;
+						padding: 0px;
+						box-sizing: border-box;
+						font-family: cursive;
+			}
+
+			#wrapper-div {
+						display: flex;
+						flex-direction: column;
+						width: 80%;
+						min-height: 100px;
+						margin: auto;
+			}
+		
+			#logo-div {
+						display: flex;
+						flex-direction: row;
+						width: 100%;
+						min-height: 50px;
+						background-color: gray;
+						align-items: center;
+						padding-left: 2%;
+						margin-bottom: 10px;
+			}
+
+			#main-container {
+						display: flex;
+						flex-direction: row;
+						width: 100%;
+						min-height: 500px;
+						justify-content: space-between;
+			}
+
+			#left-side {
+						display: flex;
+						flex-direction: column;
+						flex-basis: 30%;
+						padding-left: 1%;
+			}
+				
+			#right-side {
+						display: flex;
+						flex-direction: column;
+						flex-basis: 65%;
+						justify-content: space-between;
+			}
+
+			#header-banner {
+						display: flex;
+						flex-direction: row;
+						width: 100%;
+						min-height: 150px;
+						justify-content: center;
+						align-items: center;
+						background-color: gray;
+			}
+
+			#body-div {
+						display: flex;
+						flex-direction: row;
+						width: 100%;
+						min-height: 340px;
+						justify-content: center;
+						align-items: center;
+						background-color: gray;
+			}
+
+			#footer {
+						display: flex;
+						flex-direction: row;
+						width: 100%;
+						min-height: 50px;
+						background-color: gray;
+						margin-top: 10px;
+						justify-content: center;
+						align-items: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="wrapper-div">
+			<div id="logo-div">
+				Logo
+			</div>
+
+			<div id="main-container">
+				<div id="left-side">
+					<div id="sidebar-div">
+						Side bar
+					</div>
+					<div id="nav-div">
+						Navigation
+					</div>
+				</div>
+				
+				<div id="right-side">
+					<div id="header-banner">
+						Header / Banner
+					</div>
+					<div id="body-div">
+						Body Area
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer">
+				Footer
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex layout4</title>
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .wrapper-div {
+      width: 60%;
+      min-height: 100px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      min-height: 50px;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .logo, .nav {
+      display: flex;
+      flex-basis: 50%;
+      padding-left: 2%;
+    }
+
+    .row-container {
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      width: 100%;
+      min-height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .col {
+      flex-basis: 20%;
+      background-color: gray;
+      display: flex;
+      
+    }
+
+    .boxes {
+      width: 100%;
+      min-height: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .box {
+        display: flex;
+        flex-basis: 30%;
+        background-color: gray;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+      width: 100%;
+      min-height: 50px;
+      background-color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper-div">
+    <header>
+      <p class="logo">Logo</p>
+      <p class="nav">Navigation</p>
+    </header>
+
+    <main>
+      <div class="row-container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+
+      <div class="boxes">
+        <div class="box">
+          Box 1
+        </div>
+        <div class="box">
+          Box 2
+        </div>
+        <div class="box">
+          Box 3
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Footer
+    </footer>
+  </div>
+</body>
+</html>

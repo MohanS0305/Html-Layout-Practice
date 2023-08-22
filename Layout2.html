@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Layout 2
+		</title>
+		<style type="text/css">
+
+			* {
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+				font-family: Arial;
+			}
+
+			#header-div {
+				width: 100%;
+				background-color: lightgray;
+				margin-bottom: 10px;
+			}
+
+			#log-div {
+				width: 50%;
+				min-height: 50px;
+				float: left;
+				line-height: 50px;
+				padding-left: 2%;
+			}
+
+			#nav-div {
+				width: 30%;
+				min-height: 50px;
+				float: left;
+				text-align: center;
+				line-height: 50px;
+			}
+
+			.clearfix::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			#head-banner, #intro-div {
+				width: 100%;
+				min-height: 100px;
+				background-color: lightgray;
+				text-align: center;
+				line-height: 100px;
+				margin-bottom: 10px;
+			}
+
+			 #intro-div {
+				width: 100%;
+				min-height: 100px;
+				background-color: lightgray;
+				text-align: center;
+				line-height: 100px;
+				margin-bottom: 20px;
+			}
+			
+			
+
+			#box-container {
+				width: 100%;
+				min-height: 400px;
+				margin-bottom: 20px;
+			}
+
+			#box-container .box {
+				width: 30%;
+				min-height: 400px;
+				background-color: lightgray;
+				float: left;
+				text-align: center;
+				line-height: 400px;
+			}
+
+			#box-container .box:nth-child(2) {
+				margin-left: 5%;
+				margin-right: 5%;	
+			}
+
+			#footer {
+				width: 100%;
+				min-height: 50px;
+				background-color: lightgray;
+				text-align: center;
+				line-height: 50px;
+			}
+
+			#wrapper-div {
+				width: 80%;
+				margin: auto;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="wrapper-div">
+		<div id="header-div" class="clearfix">
+			<div id="log-div">
+				Logo
+			</div>
+			<div id="nav-div">
+				Navigation
+			</div>
+		</div>
+
+		<div id="head-banner">
+			Header/Banner
+		</div>
+		<div id="intro-div" class="intro">
+			Into Text Area
+		</div>
+
+		<div id="box-container" class="clearfix">
+			<div class="box">
+				Box1
+			</div>
+			<div class="box">
+				Box2
+			</div>
+			<div class="box">
+				Box3
+			</div>
+		</div>
+
+		<div id="footer">
+			Footer
+		</div>
+		</div>
+	</body>
+</html>

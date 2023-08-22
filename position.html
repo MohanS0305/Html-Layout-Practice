@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Html position</title>
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      width: 80%;
+      min-height: 100%;
+      background-color: gray;
+      margin: auto;
+    }
+
+    .sticky {
+      width: 100%;
+      min-height: 50px;
+      background-color: lightgray;
+      line-height: 50px;
+      padding-left: 2%;
+      position: sticky;
+      top: 10px;
+      z-index: 1;
+    }
+
+    .div1 {
+      max-width: 100%;
+      min-height: 200px;
+      background-color: pink;
+      margin: 5px;
+      position: relative;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    .child-div1 {
+      width: 100px;
+      min-height: 100px;
+      background-color: orange;
+      text-align: center;
+      line-height: 100px;
+      position: absolute;
+      bottom: -24%;
+      right: -12%;
+    }
+
+    .div2 {
+      max-width: 100%;
+      min-height: 200px;
+      background-color: purple;
+      margin-top: 25%;
+      text-align: center;
+      color: white;
+    }
+
+    .child-div2 {
+      width: 100px;
+      min-height: 100px;
+      background-color: blue;
+      text-align: center;
+      line-height: 100px;
+      position: relative;
+      bottom: 4rem;
+      right: 3rem;
+    }
+
+    .div3 {
+      width: 100%;
+      min-height: 200px;
+      background-color: aqua;
+      margin: 25% 0%;
+      text-align: center;
+      color: red;
+    }
+
+    .child-div3 {
+      width: 100px;
+      min-height: 100px;
+      background-color: lightsalmon;
+      line-height: 100px;
+      position: fixed;
+      right: 40%;
+      bottom: 2rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sticky">
+    <div class="sticky-child">
+      ps sticky
+    </div>
+  </div>
+
+  <div class="div1">
+    position relative
+    <div class="child-div1">
+      ps absolute
+    </div>
+  </div>
+
+  <div class="div2">
+    parent
+    <div class="child-div2">
+      ps relative
+    </div>
+  </div>
+
+  <div class="div3">
+    parent
+    <div class="child-div3">
+      ps fixed
+    </div>
+  </div>
+</body>
+</html>

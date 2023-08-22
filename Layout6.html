@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Layout 6
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .wrapper {
+        width: 100%;
+        min-height: 100px;
+        font-size: 20px;
+      }
+
+      header,nav {
+        width: 100%;
+        min-height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-bottom: 2px solid black;
+      }
+
+      .main-content {
+        width: 100%;
+        min-height: 400px;
+        line-height: 400px;
+        text-align: center;
+      }
+
+      .clear-fix::after {
+        content: " ";
+        display: block;
+        clear: both;
+      }
+      .main-left {
+        width: 30%;
+        min-height: 400px;
+        float: left;
+        border: 2px solid black;
+        border-top: none;
+      }
+
+      .main-right {
+        width: 70%;
+        min-height: 400px;
+        float: right;
+        border: 2px solid black;
+        border-top: none;
+        border-left: none;
+      }
+
+      footer {
+        width: 100%;
+        min-height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-bottom: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        Header Section
+      </header>
+      <nav>
+        Navigation Bar
+      </nav>
+      <div class="main-content clear-fix">
+        <div class="main-left">
+          Index
+        </div>
+        <div class="main-right">
+          Content section
+        </div>
+      </div>
+      <footer>
+        Footer Section
+      </footer>
+    </div>
+  </body>
+</html>
